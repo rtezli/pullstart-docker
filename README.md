@@ -1,8 +1,8 @@
-#pullstart
+# pullstart-docker
 
 ## Intro
 
-Pullstart is a minimalistic image to pull Node.js sources from git and run them.
+Pullstart is a minimalistic Docker image to pull Node.js sources from git and run them.
 
 ## Image
 
@@ -23,5 +23,3 @@ To run a Node.js git repository use :
 You can also open a bash :
 
 `docker run -it rtezli/pullstart:0.0.1 /bin/bash`
-
-[Sources](https://github.com/rtezli/pullstart-docker)
