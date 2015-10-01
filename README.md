@@ -1,9 +1,27 @@
-#java docker
+#pullstart
 
-Oracle Java 8 image based on vanilla Debian Wheezy
+## Intro
 
-Java distribution :  jre-8u60-linux-x64
+Pullstart is a minimalistic image to pull Node.js sources from git and run them.
 
-Apt packages : wget
+## Image
 
-To be used as base image for Java based applications like Hadoop, Spark, Storm ...
+Based on: debian:wheezy
+
+Virtual size: 203.6 MB
+
+Apt packages: git-core
+
+Other software : Node.js
+
+## Usage
+
+To run a Node.js git repository use :
+
+`docker run -it -p 80:5000 rtezli/pullstart:0.0.1 run https://github.com/heroku/node-js-sample.git`
+
+You can also open a bash :
+
+`docker run -it rtezli/pullstart:0.0.1 /bin/bash`
+
+[Sources](https://github.com/rtezli/pullstart-docker)
